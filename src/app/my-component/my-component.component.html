@@ -1,6 +1,20 @@
-<<h2>{{ message }}</h2>
-
-<!-- Property binding for image source -->
-
-<!-- Property binding for button disabled state -->
-<button [disabled]="buttonDisabled">Click Me</button>
+<div>
+    <!-- String Interpolation -->
+    <h1>{{ title }}</h1>
+  
+    <!-- Property Binding -->
+    <input [value]="inputValue" />
+  
+    <!-- Event Binding -->
+    <p>{{ message }}</p>
+    <button (click)="changeMessage()">Click Me</button>
+  
+    <!-- Class Binding -->
+    <p [class.active]="isActive">This paragraph has conditional class binding.</p>
+    <button (click)="toggleClass()">Toggle Class</button>
+  
+    <!-- Style Binding -->
+    <p [style.color]="isSpecial ? 'blue' : 'red'">This paragraph has conditional style binding.</p>
+    <button (click)="toggleSpecial()">Toggle Style</button>
+  </div>
+  

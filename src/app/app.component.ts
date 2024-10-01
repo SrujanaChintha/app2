@@ -5,7 +5,7 @@ import { MyComponentComponent } from "./my-component/my-component.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MyComponentComponent],
+  imports: [RouterOutlet,MyComponentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
